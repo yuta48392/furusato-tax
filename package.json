@@ -1,0 +1,19 @@
+{
+  "name": "furusato-tax",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/web",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm --workspace apps/web run dev",
+    "build": "npm --workspace apps/web run build",
+    "lint": "npm --workspace apps/web run lint",
+    "test": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vitest": "^1.6.0"
+  }
+}
