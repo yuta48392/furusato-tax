@@ -80,7 +80,7 @@ export const calculateTaxes = (input: TaxEngineInput): TaxEngineResult => {
     input.lifeInsuranceOld,
   );
   const incomeEarthquake = calcEarthquakeDeductionIncome(input.earthquakeInsurance);
-  const residentEarthquake = calcEarthquakeDeductionResident(input.earthquakeInsurance);
+  const residentEarthquake = calcEarthquakeDeductionIncome(input.earthquakeInsurance);
 
   const incomeTaxable = calcIncomeTaxable(salaryIncomeAfterDeduction, {
     basic: rules.basicDeductionIncome,
